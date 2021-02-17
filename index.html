@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Tetris Game JS</title>
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <style>
+            #score{
+                display: inline-block;
+            }
+            div{
+                font-size: 25px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+            }
+            canvas{
+                display: block;
+                margin:0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="tetris" width="200" height="400"></canvas>
+        <div>
+            Score : <div id="score">0</div>
+        </div>
+
+        <!-- 注意，这里script加载的顺序很重要，如果tetris在前面的话就无法调用tetriminoes里面的资源了 -->
+        <script src="tetris.js"></script>
+    </body>
+</html>
